@@ -1,6 +1,8 @@
 const proTimer = document.querySelector("#proTimer")
 const conTimer = document.querySelector("#conTimer")
 const originalTime = parseInt(document.querySelector("body").className)
+const startButton = document.querySelector("#switch")
+let paused = true
 let finished = 2
 let remind_30 = new Audio("../audio/30s.mp3")
 let endSound = new Audio('../audio/end.mp3')
@@ -78,6 +80,10 @@ function timeToString (t) {
 }
 
 function handleButton() {
+    if (paused) {
+        startButton.textContent = "切换"
+        paused = false
+    }
     if (finished === 0) {
     } else if (proNextTurn && proTimerObject.hasRemainingTime) {
         proNextTurn = false
@@ -101,6 +107,10 @@ function resetBoth() {
 }
 
 function stopBoth() {
+    proNextTurn = !proNextTurn
+    conNextTurn = !conNextTurn
+    startButton.textContent = "开始"
+    paused = true
     proTimerObject.stopTimer()
     conTimerObject.stopTimer()
 }
