@@ -9,8 +9,6 @@ a:hover {
     rgba(33, 62, 82, 0.73)), url("../images/lijicup.png");)
     opacity: 50%;
     filter: brightness(100%);
-    /*background-image: linear-gradient(rgb(40, 73, 82, 0.7),*/
-    /*rgba(40, 73, 82, 0.7)), url("../images/lijicup.png");)*/
 }
 
 .timer {
@@ -24,14 +22,7 @@ a:hover {
 }
 
 .title {
-    /*padding: 0 0;*/
     margin: 10% 0 0 0;
-    /*border: 0;*/
-    /*color: white;*/
-    /*filter: brightness(120%);*/
-    /*font-family: 'Noto Serif Simplified Chinese', serif;*/
-    /*writing-mode: horizontal-tb;*/
-    /*font-family: 'Noto Serif Simplified Chinese', serif;*/
     text-align: center;
     font-size: 5vw;
     color: white;
