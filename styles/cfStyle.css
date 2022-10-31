@@ -1,5 +1,5 @@
-a:hover {
-    color: #4e6be2;
+a {
+    alignment: center;
 }
 
 .bgimage {
@@ -14,28 +14,31 @@ a:hover {
 }
 
 .timer {
-    font-size: 19vw;
-    margin: 5% 0;
+    font-size: 17vw;
+    margin: 10% 3% 0 3%;
     color: white;
     filter: brightness(120%);
-    text-align: center;
     font-family: 'Noto Serif Simplified Chinese', serif;
-
 }
 
 .title {
-    /*padding: 0 0;*/
-    margin: 10% 0 0 0;
-    /*border: 0;*/
-    /*color: white;*/
-    /*filter: brightness(120%);*/
-    /*font-family: 'Noto Serif Simplified Chinese', serif;*/
-    /*writing-mode: horizontal-tb;*/
-    /*font-family: 'Noto Serif Simplified Chinese', serif;*/
+    margin: 0 19% 0 20%;
     text-align: center;
     font-size: 5vw;
     color: white;
     font-family: 'Ma Shan Zheng', serif;
+}
+
+.overallTitle {
+    margin: 5vh 0 0 0;
+    text-align: center;
+    font-size: 6vw;
+    color: white;
+    font-family: 'Ma Shan Zheng', serif;
+}
+
+p {
+    margin: 10vh 0 0 0%;
 }
 
 .startButton {
@@ -45,6 +48,19 @@ a:hover {
     filter: brightness(120%);
     text-align: center;
     font-family: 'Ma Shan Zheng', serif;
+}
+
+.cfButton {
+    font-size: 2vw;
+    margin: 0 1%;
+    color: white;
+    filter: brightness(120%);
+    text-align: center;
+    font-family: 'Ma Shan Zheng', serif;
+}
+
+.cfButton:hover {
+    color: #7b7ba4;
 }
 
 .startButton:hover {
@@ -89,65 +105,33 @@ body {
     border-left: 25px solid white;
 }
 
-h1 {
-    margin: 20% 0 0 0;
-    text-align: center;
-    font-size: 10vw;
+#proTimer {
+    font-size: 17vw;
+    margin: 0 0 0 0;
+    padding: 0;
+    position: absolute;
+    left: 5.5vw;
     color: white;
-    font-family: 'Ma Shan Zheng', serif;
+    filter: brightness(120%);
+    font-family: 'Noto Serif Simplified Chinese', serif;
 }
 
-h2 {
-    margin: 37vh 0 0 0;
-    text-align: center;
-    font-size: 6.6vw;
+#conTimer {
+    font-size: 17vw;
+    margin: 0 0 0 0;
+    padding: 0;
     color: white;
-    font-family: 'Ma Shan Zheng', serif;
+    position: absolute;
+    right: 5.5vw;
+    filter: brightness(120%);
+    font-family: 'Noto Serif Simplified Chinese', serif;
 }
 
-h3 {
-    margin: 30vh 0 3vh 0;
-    font-size: 3vw;
-    color: white;
-    font-family: 'Ma Shan Zheng', serif;
+.timerdiv {
+    margin-bottom: 50vh;
+    margin-top: 2vh;
 }
 
-#eng {
-    font-family: "Libre Baskerville", sans-serif
-}
-
-table {
-
-    border-collapse: collapse;
-    border: 2px solid rgb(200,200,200);
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-}
-
-td, th {
-    border: 1px solid rgb(190,190,190);
-    padding: 10px 20px;
-    opacity: 50%;
-}
-
-th {
-    background-color: rgb(235,235,235);
-    opacity: 70%;
-}
-
-td {
-    text-align: center;
-    font-size: xx-large;
-}
-
-tr:nth-child(even) td {
-    background-color: rgb(250,250,250);
-}
-
-tr:nth-child(odd) td {
-    background-color: rgb(245,245,245);
-}
-
-caption {
-    padding: 10px;
+.cfp {
+    margin-top: 16vh;
 }

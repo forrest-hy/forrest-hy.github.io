@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us" class="bgimage">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="../styles/cfStyle.css" rel="stylesheet">
+  <link rel="icon" href="../images/logo.png">
+  <title>礼济杯 自由辩</title>
+  <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng" rel="stylesheet">
+  <script src="../scripts/cfTimer.js" defer></script>
+  <style>
+    .vertical {
+      border-left: 3px solid #8599b5;
+      opacity: 50%;
+      height: 66vh;
+      position:absolute;
+      left: 49.8vw;
+      top: 20vh
+    }
+  </style>
+</head>
+
+<body class="240">
+
+<p class="overallTitle">自由辩论</p>
+<div class="vertical"> </div>
+<p class="cfp">
+<span class="title">正方</span>
+<span class="title">反方</span>
+</p>
+<div class="timerdiv">
+<span class="timer" id="proTimer">
+  04:00
+</span>
+<span class="timer" id="conTimer">
+  04:00
+</span>
+</div>
+<span onclick="handleButton()" class="cfButton" id="switch"> 切换 </span>
+<span onclick="stopBoth()" class="cfButton" id="stop"> 暂停 </span>
+<span onclick="resetBoth()" class="cfButton" id="reset"> 重置 </span>
+<a class="nextLink" title="下一环节" href="14_con4.html"></a>
+<a class="prevLink" title="上一环节" href="12_pro2-con3.html"></a>
+</body>
+
+</html>
