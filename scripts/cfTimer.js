@@ -45,17 +45,6 @@ const timerPrototype = {
     },
 }
 
-function decrement(myTimer) {
-    myTimer.remainingTime--
-    if (myTimer.remainingTime === 0) {
-        playEndSound()
-        myTimer.stopTimer()
-    } else if (myTimer.remainingTime === 30) {
-        play30sSound()
-    }
-    myTimer.timer.textContent = timeToString(myTimer.remainingTime)
-}
-
 function Timer (timerWrap, time, other) {
     this.timer = timerWrap
     this.originalTime = time
