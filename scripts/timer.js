@@ -1,4 +1,21 @@
 const timer = document.querySelector(".timer")
+document.addEventListener(
+    "keydown",
+    (e) => {
+        if (e.key === "Enter") {
+            toggleFullScreen();
+        }
+    },
+    false,
+);
+
+function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else if (document.exitFullscreen) {
+        document.exitFullscreen();
+    }
+}
 let time = parseInt(document.querySelector("body").className)
 let startButton = document.querySelector("#startButton")
 let remind_30 = new Audio("../audio/30s.mp3")
